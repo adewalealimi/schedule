@@ -11,6 +11,8 @@ const createStoreWithMiddleware = applyMiddleware()(compose(window.devToolsExten
 // import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
+
+
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
@@ -18,5 +20,4 @@ function main() {
     </Provider>
     , document.querySelector('.app-wrapper'));
 }
-
 document.addEventListener('DOMContentLoaded', main);
